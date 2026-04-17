@@ -1,0 +1,18 @@
+@import url('nav.css');
+@import url('LLM.css');
+
+html {
+    --border: rgba(1,1,1,0.2) solid 1px;
+    --primary: #b6cca8;
+    --accent: #697d5c;
+    --accent-hover: rgba(255,255,255,0.2);
+}
+
+* {
+    overflow: hidden;
+    font-family: Noto Sans;
+}
+
+body {
+    margin: 0;
+}

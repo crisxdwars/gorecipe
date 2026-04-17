@@ -1,0 +1,121 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--primary);
+}
+
+.container-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.container-title h1 {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.container-title p {
+    font-size: 14px;
+    color: #555;
+}
+.container-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background: var(--accent);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container-search-title h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 16px;
+}
+
+
+.search-bar:focus {
+    outline: none;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    outline: none;
+}
+
+.container-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border-top: rgba(1,1,1,0.2) dashed 1px;
+}
+
+.result-box {
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+
+@media (max-width: 420px) {
+    .container-title h1 {
+        font-size: 24px;
+    }
+
+    .container-title p {
+        font-size: 10px;
+    }
+
+    .container-search {
+        width: 220px;
+        padding: 20px;
+    }
+
+    .container-search-title h3 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .search-bar {
+        width: 100%;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .search-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
